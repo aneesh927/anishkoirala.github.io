@@ -1,108 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Anish Koirala | Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anish Koirala | Full Stack Developer</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
+<!-- ================= NAVBAR ================= -->
+
+<header id="navbar">
     <div class="container nav-container">
         <h2 class="logo">Anish<span>Koirala</span></h2>
-        <nav>
+
+        <nav id="nav-links">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact" class="nav-btn">Hire Me</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <div class="nav-actions">
+            <button id="theme-toggle">🌙</button>
+            <div id="hamburger">☰</div>
+        </div>
     </div>
 </header>
 
-<section class="hero">
-    <div class="container hero-grid">
-        <div class="hero-text">
-            <h1>Building Modern <span>Web Experiences</span></h1>
-            <p>
-                I'm Anish Koirala, a BCA student focused on full stack development,
-                clean UI design, and scalable web solutions.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Contact Me</a>
-                <a href="#about" class="btn-outline">Learn More</a>
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <h1>Hello, I'm <span>Anish Koirala</span></h1>
+        <h3>BCA Student | Full Stack Developer | UI Designer</h3>
+        <p>
+            I build scalable web applications, modern user interfaces,
+            and high-performance digital solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-outline">Hire Me</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h2>15+</h2>
+                <p>Projects Built</p>
+            </div>
+            <div>
+                <h2>3+</h2>
+                <p>Years Learning</p>
+            </div>
+            <div>
+                <h2>100%</h2>
+                <p>Dedication</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- ================= ABOUT ================= -->
+
 <section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <p class="section-text">
-            Passionate about technology and continuous growth, I focus on building
-            modern and meaningful digital solutions. I believe in discipline,
-            simplicity, and strong problem-solving skills.
-        </p>
+    <div class="container about-grid">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate BCA student focused on full stack development,
+                UI/UX design, and problem-solving. I believe in clean code,
+                scalable architecture, and continuous learning.
+            </p>
+            <p>
+                My goal is to become an internationally competitive developer
+                and build impactful digital products.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <div class="image-placeholder">
+                Your Photo Here
+            </div>
+        </div>
     </div>
 </section>
+
+<!-- ================= SKILLS ================= -->
 
 <section id="skills" class="section dark">
     <div class="container">
         <h2>Technical Skills</h2>
 
-        <div class="skills-grid">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">Figma</div>
-            <div class="skill-card">Photoshop</div>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress"><span style="width:75%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>Python</p>
+            <div class="progress"><span style="width:70%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>Java</p>
+            <div class="progress"><span style="width:65%"></span></div>
         </div>
     </div>
 </section>
 
-<section id="education" class="section">
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="section">
     <div class="container">
-        <h2>Education</h2>
+        <h2>Services</h2>
 
-        <div class="edu-card">
-            <h3>BCA – Milton International College</h3>
-            <p>Ongoing</p>
-        </div>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Modern responsive websites using latest technologies.</p>
+            </div>
 
-        <div class="edu-card">
-            <h3>+2 – Nobel Academy</h3>
-            <p>CGPA: 3.23</p>
-        </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Clean, minimal and user-friendly interface design.</p>
+            </div>
 
-        <div class="edu-card">
-            <h3>SEE – Shree Ananda Secondary School</h3>
-            <p>CGPA: 2.70</p>
+            <div class="card">
+                <h3>Backend Systems</h3>
+                <p>Secure and scalable backend architecture.</p>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section dark">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid-3">
+            <div class="card project">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal portfolio with animations.</p>
+                <a href="#">Live Demo</a>
+            </div>
+
+            <div class="card project">
+                <h3>CRUD Application</h3>
+                <p>PHP + MySQL based dynamic data system.</p>
+                <a href="#">Live Demo</a>
+            </div>
+
+            <div class="card project">
+                <h3>E-commerce UI</h3>
+                <p>Modern frontend design for online shopping.</p>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="section">
+    <div class="container">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Freelance Developer</h3>
+                <span>2024 - Present</span>
+                <p>Building websites and systems for clients.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Academic Projects</h3>
+                <span>2023 - 2024</span>
+                <p>Built database and web-based applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
 
 <section id="contact" class="section dark">
     <div class="container">
-        <h2>Let's Connect</h2>
+        <h2>Contact Me</h2>
 
         <form class="contact-form">
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject">
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit" class="btn-primary">Send Message</button>
         </form>
     </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    <div class="container">
-        <p>© 2026 Anish Koirala. All rights reserved.</p>
+    <div class="container footer-grid">
+        <div>
+            <h3>Anish Koirala</h3>
+            <p>Full Stack Developer from Nepal.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <p><a href="#about">About</a></p>
+            <p><a href="#projects">Projects</a></p>
+        </div>
+
+        <div>
+            <h4>Follow Me</h4>
+            <p>GitHub</p>
+            <p>LinkedIn</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2026 Anish Koirala. All Rights Reserved.
     </div>
 </footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.onclick = () => {
+    navLinks.classList.toggle("active");
+};
+
+document.getElementById("theme-toggle").onclick = () => {
+    document.body.classList.toggle("light-mode");
+};
+</script>
 
 </body>
 </html>
